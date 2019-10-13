@@ -1,0 +1,308 @@
+html, body{
+		margin: 0;
+		padding: 0;
+
+		height: 100%;
+		width: 100%;
+
+		background-color: #c44569;
+
+		font-family: 'Inconsolata';
+
+	}
+
+	#total-page-wrap{
+		height: 100%;
+		width: 100%;
+
+		position: relative;
+		overflow: hidden;
+
+		display: flex;
+		flex-direction: column;
+
+		justify-content: space-between;
+	}
+
+	 @font-face{
+        font-family:"Bebas Neue W01 Regular";
+        src:url("./assets/webfonts/Fonts/1444649/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix");
+        src:url("./assets/webfonts/Fonts/1444649/3d9ec9a9-76a2-4cfe-b376-76e7340c3b50.eot?#iefix") format("eot"),url("./assets/webfonts/Fonts/1444649/e0d6f852-5401-4bbf-9672-47a50c5c87c6.woff2") format("woff2"),url("./assets/webfonts/Fonts/1444649/7fedd582-6ae3-4850-be2f-4acae2e74fa5.woff") format("woff"),url("./assets/webfonts/Fonts/1444649/d6e08ef3-40db-4ac3-82df-f062f55a72f5.ttf") format("truetype");
+    }
+
+	#nav-wrap{
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		 -ms-flex-direction: row;
+		 flex-direction: row;
+
+		-webkit-box-pack: justify;
+
+		-ms-flex-pack: justify;
+
+		justify-content: space-between;
+
+		padding: 15px 0px 15px 0px;
+	}
+
+	#logo, #nav-bar{
+		padding: 0px 35px;
+	}
+
+	#logo{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		-webkit-box-pack: center;
+
+		-ms-flex-pack: center;
+
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		 align-items: center;
+	}
+
+	#nav-bar{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		-webkit-box-pack: center;
+
+		    -ms-flex-pack: center;
+
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	#nav-links{
+		display: none;
+		background-color: #353b48;
+	    padding: 0px;
+	    width: 0px;
+	    height: 0px;
+	    position: absolute;
+	    border-radius: 9999px;
+
+	    z-index: 90;
+	}
+
+	#nav-button{
+		z-index: 100;
+	}
+
+	#username{
+		left: -90px;
+		position: relative;
+		color: #ff793f;
+	}
+
+	#saved{
+		left: -20px;
+		position: relative;
+	}
+
+	#post{
+		left: 5px;
+		position: relative;
+	}
+
+	#log{
+		left: 40px;
+		position: relative;
+		width: fit-content;
+	}
+
+	#user-choices{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+
+		position: absolute;
+	    left: 10%;
+	    top: 57%;
+
+		-webkit-box-orient: vertical;
+
+		-webkit-box-direction: normal;
+
+		-ms-flex-direction: column;
+
+		 flex-direction: column;
+
+	}
+
+	#user-choices p{
+		text-align: center;
+
+		margin: 0px 10px;
+
+		font-size: 22px;
+
+		padding: 10px 0px;
+	}
+
+	#user-choices a{
+		color: #F4D35E;
+		text-decoration: none;
+
+		-webkit-transition: color .3s ease-in;
+
+		-o-transition: color .3s ease-in;
+
+		transition: color .3s ease-in;
+	}
+
+	#user-choices a::after{
+		content: '';
+		width: 0;
+		height: 1px;
+		display: block;
+		background: #F4D35E;
+
+		-webkit-transition: width .3s;
+
+		-o-transition: width .3s;
+
+		transition: width .3s;
+	}
+
+	#user-choices a:hover::after{
+		width: 100%;
+	}
+
+	#user-choices a:hover{
+		color: #8FB8ED;
+	}
+
+	#placeholder{
+		height: 100%;
+		width: 100%;
+	}
+
+	#submission-wrap{
+		display: flex;
+		flex-direction: column;
+
+		justify-content: center;
+		align-items: center;
+
+		background-color: #EBEBD3;
+
+		padding: 35px;
+		margin-top: 200%;
+	}
+
+	#success-message{
+		width: 100%;
+		height: 85%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		text-align: center;
+
+		/*display: none;*/
+	}
+
+	#success-content{
+		font-family: "Inconsolata";
+		display: none;
+
+		width: 500px;
+		border-radius: 4px;
+		padding: 50px;
+		background-color: blanchedalmond;
+	}
+
+	#success-content p{
+		font-size: 16px;
+	}
+
+	#success{
+		font-size: 24px !important;
+
+		color: rgba(39, 174, 96,1.0);
+        background-color: rgba(46, 204, 113,.4);
+
+        padding: 10px;
+
+        border: 1px solid #27ae60;
+
+        border-radius: 4.5px;
+        text-align: center;
+
+	}
+
+	#error{
+		font-size: 24px !important;
+
+		color: rgba(192, 57, 43,1.0);
+        background-color: rgba(231, 76, 60,.4);
+
+        padding: 10px;
+
+        border: 1px solid rgba(192, 57, 43,1.0);
+
+        border-radius: 4.5px;
+        text-align: center;
+
+	}
+
+	#food-challenge-sub input{
+		width: 350px;
+		height: 30px;
+
+		margin: 10px 0px;
+		padding: 10px;
+
+		border-radius: 2.5px;
+    	border: .5px solid #a4b0be;
+
+		font-family: "Karla";
+		font-size: 15px;
+		color: darkgrey;
+	}
+
+	#sub-button{
+		box-sizing: content-box;
+		padding: 20px;
+
+		width: 100%;
+
+		background-color: #c44569;
+
+		transition: background-color .3s;
+
+		color: black !important;
+	}
+
+	#sub-button:hover{
+		background-color: #e4ed71;
+		cursor: pointer;
+	}
+
+	#chall-desc{
+		height: 200px !important;
+		width: 350px;
+
+		font-family: "Karla";
+		font-size: 15px;
+		color: darkgrey;
+
+		margin: 10px 0px;
+		padding: 10px;
+
+		border-radius: 2.5px;
+    	border: .5px solid #a4b0be;
+
+	}
